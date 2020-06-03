@@ -52,19 +52,30 @@ image {
 .hosts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  margin-top: 3rem;
 }
+.student,
 .host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(1fr, 1fr);
+  justify-content: center;
+  align-items: baseline;
 }
 
+.host:first-child img {
+  width: 180px;
+  object-fit: cover;
+}
+
+.student,
+.host img {
+  border: 2px white solid;
+}
 .image-details {
   color: black;
+  background-color: white;
+  text-align: center;
+  margin: 0;
 }
 
 /* students */
@@ -73,29 +84,29 @@ image {
   margin: 1.5rem 0;
 }
 .students {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
   display: flex;
   grid-gap: 1rem;
   justify-content: space-evenly;
   margin-top: 3rem;
 }
-.student {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: rgb(74, 174, 236);
+/* .student {
+  display: grid;
+  grid-template-rows: repeat(1fr, 1fr);
+  justify-content: center;
+  align-items: baseline;
 }
 
 .students .image-details {
-  color: white;
+  color: black;
+  background-color: white;
+  text-align: center;
+
+  margin: 0;
 }
 
 .student .img {
-  height: 100px;
-}
+  border: 2px white solid;
+} */
 
 /* mobile */
 
