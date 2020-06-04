@@ -51,7 +51,7 @@ image {
 
 .hosts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 3rem;
 }
 .student,
@@ -89,24 +89,6 @@ image {
   justify-content: space-evenly;
   margin-top: 3rem;
 }
-/* .student {
-  display: grid;
-  grid-template-rows: repeat(1fr, 1fr);
-  justify-content: center;
-  align-items: baseline;
-}
-
-.students .image-details {
-  color: black;
-  background-color: white;
-  text-align: center;
-
-  margin: 0;
-}
-
-.student .img {
-  border: 2px white solid;
-} */
 
 /* mobile */
 
