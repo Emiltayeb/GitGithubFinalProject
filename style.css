@@ -62,11 +62,10 @@ image {
   align-items: baseline;
 }
 
-.host:first-child img {
-  width: 180px;
+.host .img {
+  width: 150px;
   object-fit: cover;
 }
-
 .student,
 .host img {
   border: 2px white solid;
@@ -92,7 +91,7 @@ image {
 
 /* mobile */
 
-@media (max-width: 680px) {
+@media (max-width: 983px) {
   .hosts {
     display: flex;
     flex-direction: column;
@@ -104,6 +103,7 @@ image {
 
   .students {
     flex-direction: column;
+    align-items: center;
   }
 
   .student {
